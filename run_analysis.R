@@ -1,6 +1,7 @@
 library(dplyr)
 
 # This function determines the columns of interest from the file of features
+# this is, the columns containing the strings "mean" or "std"
 extract_index <- function(feat){
   index1 <- grep("mean",feat[,2])
   index2 <- grep("std",feat[,2])
